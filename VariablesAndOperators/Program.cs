@@ -60,7 +60,7 @@ namespace VariablesAndOperators
 
             Console.WriteLine(packagesAvailable); 
 
-            */
+            
 
             Console.WriteLine("Name of Donor");
             string donorName = Console.ReadLine();
@@ -75,29 +75,51 @@ namespace VariablesAndOperators
             string year = Console.ReadLine();
 
             Console.WriteLine("Donated Ones");
-            int ones = int.Parse(Console.ReadLine())* 1;
+            int ones = int.Parse(Console.ReadLine()) * 1;
 
             Console.WriteLine("Donated Fives");
-            int fives = int.Parse(Console.ReadLine())* 5;            
+            int fives = int.Parse(Console.ReadLine()) * 5;
 
             Console.WriteLine("Donated Tens");
-            int tens = int.Parse(Console.ReadLine())* 10;
+            int tens = int.Parse(Console.ReadLine()) * 10;
 
             Console.WriteLine("Donated Twenties");
-            int twenties = int.Parse(Console.ReadLine())* 20;
+            int twenties = int.Parse(Console.ReadLine()) * 20;
 
             Console.WriteLine("Donated Fifties");
-            int fifties = int.Parse(Console.ReadLine())* 50;
+            int fifties = int.Parse(Console.ReadLine()) * 50;
 
             Console.WriteLine("Donated Hundreds");
-            int hundreds = int.Parse(Console.ReadLine())* 100;
+            int hundreds = int.Parse(Console.ReadLine()) * 100;
 
             Console.WriteLine("Donated Quarters");
-            double quarters = double.Parse(Console.ReadLine())* .25d;
+            double quarters = double.Parse(Console.ReadLine()) * .25d;
 
-            // Combine all donation values to creat "Donation Amount" grand answer! 
+            double donationAmount = (ones + fives + tens + twenties + fifties + hundreds + quarters);
+            Console.WriteLine(donationAmount);
+            */
 
-            double donationAmount = (ones);
+            Console.WriteLine("How many A courses?");
+            double gradeA = double.Parse(Console.ReadLine()) * 4;
+                           
+            Console.WriteLine("How many B courses?");
+            double gradeB = double.Parse(Console.ReadLine()) *3;
+
+            Console.WriteLine("How many C courses?");
+            double gradeC = double.Parse(Console.ReadLine()) * 2;
+
+            Console.WriteLine("How many D courses?");
+            double gradeD = double.Parse(Console.ReadLine()) * 1;
+
+            double sum = (gradeA + gradeB + gradeC + gradeD);
+           
+            Console.WriteLine("How many total courses?");
+            double totalCourses = double.Parse(Console.ReadLine());
+
+            double gpa = (sum / totalCourses);
+            Console.WriteLine(gpa);
+           
+            
 
         }
     }
